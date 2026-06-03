@@ -1,8 +1,7 @@
-import { test, expect } from '@playwright/test';
-import { LoginPage } from '../pages/LoginPage';
+import { test, expect } from '../fixtures/baseTest';
 
-test('Login with valid credentials', async ({ page }) => {
-  const loginPage = new LoginPage(page);
+test('Login with valid credentials', async ({ page, loginPage }) => {
+  
 
   await loginPage.navigate();
   
