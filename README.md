@@ -1,60 +1,39 @@
 # SauceDemo UI Automation
 
-UI automation testing using Playwright and TypeScript.
+UI automation testing project using Playwright and TypeScript.
 
-## Project Overview
+## Features
 
-This project automates the SauceDemo e-commerce website using the Page Object Model (POM) design pattern.
-
-Website:
-https://www.saucedemo.com/
-
-## Test Scenarios
-
-### Login
 - Login with valid credentials
+- Invalid login validation
+- Locked user login validation
+- Add item to cart
+- Remove item from cart
+- Complete checkout flow
 
-### Add to Cart
-- Add Backpack item to cart
-- Verify cart item count
-
-### Checkout
-- Complete checkout process
-- Verify successful order message
-
-## Framework Features
+## Framework
 
 - Playwright
 - TypeScript
 - Page Object Model (POM)
-- Cross-browser support
-- Automated assertions
+- GitHub Actions CI/CD
 
 ## Project Structure
-pages/
-LoginPage.ts
-InventoryPage.ts
-CartPage.ts
-CheckoutPage.ts
 
+```text
+pages/
 tests/
-login.spec.ts
-addToCart.spec.ts
-checkout.spec.ts
+fixtures/
+.github/workflows/
+```
 
 ## Run Tests
 
+```bash
+npm install
 npx playwright test
+```
 
-Run Chromium only:
+## CI/CD
 
-npx playwright test --project=chromium
-
-Generate Report:
-
-npx playwright show-report
-
-
-Author
-
-Nang Ying Kyein Khay
+Tests automatically run through GitHub Actions on every push.
