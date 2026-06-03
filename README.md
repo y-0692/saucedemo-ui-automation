@@ -1,6 +1,6 @@
 # SauceDemo UI Automation
 
-UI automation testing project using Playwright and TypeScript.
+UI automation testing using Playwright and TypeScript.
 
 ## Project Overview
 
